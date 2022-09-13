@@ -1,0 +1,1 @@
+select Round(SUM(cost),2) as sum_all_books_cost from books

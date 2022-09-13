@@ -1,0 +1,1 @@
+select timestampdiff(DAY,born,died) as `Days Lived` from authors
