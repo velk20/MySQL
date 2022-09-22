@@ -1,6 +1,8 @@
-select e.employee_id,e.first_name
-from employees as e 
-left join employees_projects as ep
-on e.employee_id = ep.employee_id
-order by e.employee_id desc
-limit 3
+SELECT 
+    e.employee_id, e.first_name
+FROM
+    employees AS e
+        LEFT JOIN
+    employees_projects AS ep ON e.employee_id = ep.employee_id
+ORDER BY e.employee_id DESC
+LIMIT 3

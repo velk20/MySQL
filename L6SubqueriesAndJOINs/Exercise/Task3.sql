@@ -1,6 +1,12 @@
-select e.employee_id,e.first_name,e.last_name,d.`name` as `department_name`
-from employees as e
-join departments as d
-on e.department_id = d.department_id
-where d.`name` = 'Sales'
-order by employee_id desc
+SELECT 
+    e.employee_id,
+    e.first_name,
+    e.last_name,
+    d.`name` AS `department_name`
+FROM
+    employees AS e
+        JOIN
+    departments AS d ON e.department_id = d.department_id
+WHERE
+    d.`name` = 'Sales'
+ORDER BY employee_id DESC
