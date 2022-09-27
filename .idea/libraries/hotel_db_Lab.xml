@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="hotel_db_Lab">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/L2BasicCRUD/Lab/hotel_db_Lab.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

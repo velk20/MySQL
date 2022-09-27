@@ -11,5 +11,5 @@ SELECT
     count(*) as 'wizard_count'
     from wizzard_deposits
     group by `age_group`
-    order by `age_group`
+    order by `age_group` 
  
