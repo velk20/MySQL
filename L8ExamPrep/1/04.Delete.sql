@@ -1,0 +1,1 @@
+delete from players where age>=45
