@@ -1,15 +1,23 @@
 create table teachers(
 teacher_id int primary key auto_increment,
 `name` varchar(50) not null,
-manager_id int,
-constraint fk_teachers_managers
-foreign key (manager_id)references teachers(teacher_id)
-) auto_increment = 101;
+manager_id int
+);
 
-insert into teachers(teacher_id,`name`,manager_id)
-values(101,'John',NULL),
-(102,'John',106),
-(103,'John',106),
-(104,'John',105),
-(105,'John',101),
-(106,'John',101)
+alter table teachers
+ auto_increment = 101;
+
+insert into teachers(`name`,manager_id)
+values('John',NULL),
+('Maya',106),
+('Silvia',106),
+('Ted',105),
+('Mark',101),
+('Greta',101);
+
+
+alter table teachers
+add constraint fk_teachers_managers
+foreign key (manager_id)references teachers(teacher_id);
+
+

@@ -1,16 +1,20 @@
 CREATE TABLE `students` (
-	`student_id` INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+	`student_id` INT PRIMARY KEY AUTO_INCREMENT,
     `name` VARCHAR(100) NOT NULL
 );
 
 CREATE TABLE `exams` (
-	`exam_id` INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+	`exam_id` INT PRIMARY KEY AUTO_INCREMENT,
     `name` VARCHAR(100) NOT NULL
 ) AUTO_INCREMENT = 101;
 
 CREATE TABLE `students_exams` (
-	`student_id` INT,
-    `exam_id` INT,
+	`student_id` INT not NULL,
+    `exam_id` INT not NULL,
+	
+	CONSTRAINT pk
+	PRIMARY key (`student_id`,`exam_id`),
+	
     CONSTRAINT `fk_student`
     FOREIGN KEY (`student_id`)
     REFERENCES `students` (`student_id`),
