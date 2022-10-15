@@ -1,0 +1,2 @@
+# MySQL
+Softuni MySQL course
