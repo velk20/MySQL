@@ -1,3 +1,6 @@
+create database exam;
+use exam;
+
 create table products(
 id int primary key auto_increment,
 `name` varchar(30) not null unique,
